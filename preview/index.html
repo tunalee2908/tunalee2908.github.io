@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nguyễn Hùng Anh Tuấn - IT Portfolio</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='16' fill='%23073737'/><text x='50%' y='55%' dominant-baseline='central' text-anchor='middle' fill='%23f7f4ef' font-family='sans-serif' font-weight='bold' font-size='48'>AT</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="reading-progress" id="readingProgress"></div>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-flex">
+            <div class="logo"><p>ANH TUẤN</p></div>
+            <div class="header-right">
+                <nav class="navigation" id="nav-menu">
+                    <ul>
+                        <li><a href="#home" class="active">Trang chủ</a></li>
+                        <li><a href="#about">Giới thiệu</a></li>
+                        <li><a href="#timeline">Hành trình</a></li>
+                        <li><a href="#skills">Kỹ năng</a></li>
+                        <li><a href="#portfolio">Dự án</a></li>
+                        <li><a href="#contact">Liên hệ</a></li>
+                    </ul>
+                </nav>
+                <button class="theme-toggle" id="themeToggle" title="Đổi giao diện Sáng/Tối">
+                    <i class="fa-solid fa-moon" id="themeIcon"></i>
+                </button>
+                <div class="menu-toggle" id="mobile-menu">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Banner (Đã bỏ bảng đen chạy chữ, gom gọn khung chính + dải số liệu) -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-box hero-animate">
+                <span class="badge">SINH VIÊN CNTT — ĐẠI HỌC VINH</span>
+                <h1 class="hero-title">Nguyễn Hùng <span class="highlight">Anh Tuấn</span></h1>
+                <p class="hero-desc">Sinh viên năm 2 tại Viện Kỹ thuật và Công nghệ. Tập trung vào lập trình thuật toán C++, phát triển giao diện Web chuẩn Responsive và quản trị cơ sở dữ liệu.</p>
+                <div class="button-list">
+                    <a href="#portfolio" class="btn btn-primary">Xem Dự Án</a>
+                    <a href="CV_NguyenHungAnhTuan.pdf" download class="btn btn-outline"><i class="fa-solid fa-file-arrow-down"></i> Tải CV</a>
+                    <a href="#contact" class="btn btn-dark">Liên Hệ</a>
+                </div>
+            </div>
+
+            <div class="stats-bar hero-animate-delay">
+                <div class="stat-item">
+                    <span class="stat-num">2025</span>
+                    <span class="stat-label">Bắt đầu chuyên ngành</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-num">06+</span>
+                    <span class="stat-label">Dự án & Đồ án</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-num">08+</span>
+                    <span class="stat-label">Ngôn ngữ & Công cụ</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-num">25/25</span>
+                    <span class="stat-label">Tư duy logic & Thực hành</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me -->
+    <section id="about" class="section-padding">
+        <div class="container about-flex">
+            <div class="about-left reveal">
+                <div class="id-card">
+                    <div class="id-card-header">
+                        <div class="uni-badge">
+                            <img src="logo-dhv.png" alt="Logo ĐHV" class="uni-logo" onerror="this.style.display='none'">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <span>VINH UNIVERSITY • IET</span>
+                        </div>
+                        <span class="id-dot"></span>
+                    </div>
+                    <div class="id-photo-box">
+                        <img src="avatar.jpg" alt="Nguyễn Hùng Anh Tuấn" onerror="this.onerror=null;this.src='../avatar.jpg';">
+                    </div>
+                    <div class="id-card-footer">
+                        <h4>NGUYỄN HÙNG ANH TUẤN</h4>
+                        <p>MSSV: 255748020110093</p>
+                        <span class="id-role">IT Student • K66</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-right reveal">
+                <h2 class="title">Về Bản Thân Tôi</h2>
+                <div class="underline"></div>
+                <p class="text">Theo học ngành Công nghệ Thông tin tại Viện Kỹ thuật và Công nghệ - Trường Đại học Vinh, tôi rèn luyện tư duy giải quyết vấn đề từ gốc rễ thông qua C++ và Cấu trúc dữ liệu, đồng thời chuyển hóa ý tưởng thành các trang web trực quan, mượt mà trên cả máy tính lẫn điện thoại.</p>
+                <h3 class="subtitle">Năng lực cốt lõi</h3>
+                <div class="choose-lists">
+                    <ul class="choose-lists-content">
+                        <li><i class="fa-solid fa-check"></i> C/C++ & Thuật toán đồ thị</li>
+                        <li><i class="fa-solid fa-check"></i> HTML5, CSS3, JavaScript</li>
+                        <li><i class="fa-solid fa-check"></i> SQL Server 2022 & SSMS</li>
+                    </ul>
+                    <ul class="choose-lists-content">
+                        <li><i class="fa-solid fa-check"></i> WordPress & WooCommerce</li>
+                        <li><i class="fa-solid fa-check"></i> UI/UX Design, Tailwind CSS</li>
+                        <li><i class="fa-solid fa-check"></i> Khai thác AI & Git Workflow</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Hành trình — Đổi sang Bento Grid 2x2 lấp đầy không gian -->
+    <section id="timeline" class="section-padding bg-alt">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="title reveal">Hành Trình Học Tập</h2>
+                <div class="underline center-line reveal"></div>
+            </div>
+            <div class="roadmap-grid">
+                <div class="roadmap-card reveal">
+                    <div class="roadmap-top">
+                        <span class="roadmap-step">GIAI ĐOẠN 01</span>
+                        <span class="timeline-date">09/2025</span>
+                    </div>
+                    <h3><i class="fa-solid fa-building-columns"></i> Nhập học CNTT - ĐH Vinh</h3>
+                    <p>Bắt đầu hành trình tại Viện Kỹ thuật và Công nghệ. Xây dựng nền tảng vững chắc về Nhập môn CNTT, lập trình C/C++ cơ bản và tư duy giải thuật.</p>
+                    <div class="roadmap-tags">
+                        <span>C Programming</span>
+                        <span>Logic nền tảng</span>
+                        <span>K66 CNTT</span>
+                    </div>
+                </div>
+
+                <div class="roadmap-card reveal">
+                    <div class="roadmap-top">
+                        <span class="roadmap-step">GIAI ĐOẠN 02</span>
+                        <span class="timeline-date">12/2025</span>
+                    </div>
+                    <h3><i class="fa-solid fa-cart-shopping"></i> Đồ án Web TMĐT GLITCH Store</h3>
+                    <p>Phối hợp nhóm triển khai hệ thống bán thiết bị công nghệ đa thương hiệu. Tối ưu giao diện sản phẩm, giỏ hàng và luồng thanh toán trên WordPress & XAMPP.</p>
+                    <div class="roadmap-tags">
+                        <span>WordPress</span>
+                        <span>WooCommerce</span>
+                        <span>Teamwork</span>
+                    </div>
+                </div>
+
+                <div class="roadmap-card reveal">
+                    <div class="roadmap-top">
+                        <span class="roadmap-step">GIAI ĐOẠN 03</span>
+                        <span class="timeline-date">09/2026</span>
+                    </div>
+                    <h3><i class="fa-solid fa-diagram-project"></i> Cấu trúc dữ liệu & Giải thuật</h3>
+                    <p>Nghiên cứu chuyên sâu lý thuyết đồ thị và cài đặt thành công thuật toán Brandes bằng C++ để tính độ trung tâm trung gian (Betweenness Centrality).</p>
+                    <div class="roadmap-tags">
+                        <span>C++ STL</span>
+                        <span>Brandes Algorithm</span>
+                        <span>O(V*E)</span>
+                    </div>
+                </div>
+
+                <div class="roadmap-card reveal">
+                    <div class="roadmap-top">
+                        <span class="roadmap-step">GIAI ĐOẠN 04</span>
+                        <span class="timeline-date">11/2026 - Nay</span>
+                    </div>
+                    <h3><i class="fa-solid fa-code-branch"></i> Web Frontend & Cơ sở dữ liệu</h3>
+                    <p>Thiết kế giao diện Responsive bằng HTML5/CSS3/JS thuần, thiết kế CSDL quan hệ trên SQL Server 2022 và ứng dụng AI tối ưu hiệu suất viết code.</p>
+                    <div class="roadmap-tags">
+                        <span>HTML/CSS/JS</span>
+                        <span>SQL Server 2022</span>
+                        <span>Prompt AI</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills + Đang Học (Gộp gọn và dàn 2 cột cân đối) -->
+    <section id="skills" class="section-padding">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="title reveal">Kỹ Năng & Công Nghệ</h2>
+                <div class="underline center-line reveal"></div>
+            </div>
+
+            <div class="tech-stack-grid reveal">
+                <div class="tech-chip" data-tooltip="Lập trình hệ thống, thuật toán đồ thị, OOP">
+                    <div class="chip-icon"><i class="fa-solid fa-c"></i><span class="chip-plus">++</span></div>
+                    <span class="chip-name">C / C++</span>
+                    <div class="chip-bar"><div class="chip-fill" style="width:85%"></div></div>
+                </div>
+                <div class="tech-chip" data-tooltip="Cấu trúc ngữ nghĩa, chuẩn SEO">
+                    <div class="chip-icon"><i class="fa-brands fa-html5"></i></div>
+                    <span class="chip-name">HTML5</span>
+                    <div class="chip-bar"><div class="chip-fill" style="width:92%"></div></div>
+                </div>
+                <div class="tech-chip" data-tooltip="Flexbox, Grid, Responsive">
+                    <div class="chip-icon"><i class="fa-brands fa-css3-alt"></i></div>
+                    <span class="chip-name">CSS3</span>
+                    <div class="chip-bar"><div class="chip-fill" style="width:88%"></div></div>
+                </div>
+                <div class="tech-chip" data-tooltip="DOM, ES6+, Fetch API">
+                    <div class="chip-icon"><i class="fa-brands fa-js"></i></div>
+                    <span class="chip-name">JavaScript</span>
+                    <div class="chip-bar"><div class="chip-fill" style="width:80%"></div></div>
+                </div>
+                <div class="tech-chip" data-tooltip="Thiết kế CSDL quan hệ, truy vấn SSMS">
+                    <div class="chip-icon"><i class="fa-solid fa-database"></i></div>
+                    <span class="chip-name">SQL Server</span>
+                    <div class="chip-bar"><div class="chip-fill" style="width:75%"></div></div>
+                </div>
+                <div class="tech-chip" data-tooltip="CMS, Theme, WooCommerce">
+                    <div class="chip-icon"><i class="fa-brands fa-wordpress"></i></div>
+                    <span class="chip-name">WordPress</span>
+                    <div class="chip-bar"><div class="chip-fill" style="width:80%"></div></div>
+                </div>
+                <div class="tech-chip" data-tooltip="Quản lý mã nguồn, làm việc nhóm">
+                    <div class="chip-icon"><i class="fa-brands fa-git-alt"></i></div>
+                    <span class="chip-name">Git / GitHub</span>
+                    <div class="chip-bar"><div class="chip-fill" style="width:78%"></div></div>
+                </div>
+                <div class="tech-chip" data-tooltip="Khai thác AI hỗ trợ lập trình & tối ưu code">
+                    <div class="chip-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                    <span class="chip-name">AI Workflow</span>
+                    <div class="chip-bar"><div class="chip-fill" style="width:85%"></div></div>
+                </div>
+            </div>
+
+            <div class="skills-grid">
+                <div class="block-item reveal">
+                    <div class="icon"><i class="fa-solid fa-desktop"></i></div>
+                    <h3>Web Development</h3>
+                    <p>Cắt giao diện chuẩn ngữ nghĩa HTML5, chia bố cục Flexbox/Grid, xử lý tương tác DOM bằng JavaScript và triển khai CMS WordPress.</p>
+                </div>
+                <div class="block-item reveal">
+                    <div class="icon"><i class="fa-solid fa-code"></i></div>
+                    <h3>Thuật Toán & OOP</h3>
+                    <p>Thành thạo lập trình hướng đối tượng với C++, tối ưu độ phức tạp thời gian cho các bài toán duyệt đồ thị BFS/Shortest Path.</p>
+                </div>
+                <div class="block-item reveal">
+                    <div class="icon"><i class="fa-solid fa-database"></i></div>
+                    <h3>Database & AI Tools</h3>
+                    <p>Thiết kế lược đồ quan hệ trên SQL Server 2022, kết hợp tư duy Prompt Engineering để tăng tốc độ phát triển và kiểm thử phần mềm.</p>
+                </div>
+            </div>
+
+            <!-- Đang học & Mở rộng (Xếp lưới 2x2 ngay trong phần Kỹ năng) -->
+            <div class="learning-box reveal">
+                <h3 class="learning-heading"><i class="fa-solid fa-compass"></i> Định Hướng Đang Nghiên Cứu</h3>
+                <div class="learning-grid">
+                    <div class="learning-item">
+                        <div class="learning-icon"><i class="fa-brands fa-react"></i></div>
+                        <div class="learning-info">
+                            <h4>React.js & Tailwind</h4>
+                            <p>Xây dựng Single Page App hiện đại</p>
+                        </div>
+                        <div class="learning-bar"><div class="learning-fill" style="width:45%"><span>45%</span></div></div>
+                    </div>
+                    <div class="learning-item">
+                        <div class="learning-icon"><i class="fa-brands fa-node-js"></i></div>
+                        <div class="learning-info">
+                            <h4>Node.js / REST API</h4>
+                            <p>Kết nối Backend & Xử lý bất đồng bộ</p>
+                        </div>
+                        <div class="learning-bar"><div class="learning-fill" style="width:35%"><span>35%</span></div></div>
+                    </div>
+                    <div class="learning-item">
+                        <div class="learning-icon"><i class="fa-brands fa-python"></i></div>
+                        <div class="learning-info">
+                            <h4>Python Scripting</h4>
+                            <p>Tự động hóa & Xử lý dữ liệu</p>
+                        </div>
+                        <div class="learning-bar"><div class="learning-fill" style="width:30%"><span>30%</span></div></div>
+                    </div>
+                    <div class="learning-item">
+                        <div class="learning-icon"><i class="fa-brands fa-docker"></i></div>
+                        <div class="learning-info">
+                            <h4>Docker & Deploy</h4>
+                            <p>Đóng gói ứng dụng & CI/CD cơ bản</p>
+                        </div>
+                        <div class="learning-bar"><div class="learning-fill" style="width:25%"><span>25%</span></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="section-padding bg-alt">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="title reveal">Dự Án Đã Thực Hiện</h2>
+                <div class="underline center-line reveal"></div>
+            </div>
+
+            <div class="filter-nav reveal">
+                <button class="filter-btn active" data-filter="all">Tất cả</button>
+                <button class="filter-btn" data-filter="web">Web App</button>
+                <button class="filter-btn" data-filter="cpp">C++ / Database</button>
+            </div>
+
+            <div class="list-items">
+                <div class="item" data-category="web" data-project="glitch">
+                    <div class="banner-item">
+                        <img src="glitch.jpg" alt="Giao diện GLITCH Store">
+                        <div class="banner-overlay"><i class="fa-solid fa-expand"></i><span>Xem chi tiết</span></div>
+                    </div>
+                    <div class="inner-item">
+                        <div class="tech-tags">
+                            <span class="tag-wp">WordPress</span>
+                            <span class="tag-wp">WooCommerce</span>
+                            <span class="tag-web">HTML/CSS</span>
+                        </div>
+                        <h3 class="title-item">GLITCH Store - Web E-Commerce</h3>
+                        <p class="text">Website thương mại điện tử bán thiết bị công nghệ đa thương hiệu, hỗ trợ lọc sản phẩm, giỏ hàng và thanh toán.</p>
+                        <button class="read-more-btn">Chi tiết dự án <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+
+                <div class="item" data-category="cpp" data-project="brandes">
+                    <div class="banner-item">
+                        <img src="brandes.jpg" alt="Thuật toán Brandes C++">
+                        <div class="banner-overlay"><i class="fa-solid fa-expand"></i><span>Xem chi tiết</span></div>
+                    </div>
+                    <div class="inner-item">
+                        <div class="tech-tags">
+                            <span class="tag-cpp">C++</span>
+                            <span class="tag-cpp">Brandes Algorithm</span>
+                            <span>Graph Theory</span>
+                        </div>
+                        <h3 class="title-item">Betweenness Centrality</h3>
+                        <p class="text">Cài đặt thuật toán Brandes trên C++ giúp giảm độ phức tạp tính toán độ trung tâm trung gian của đồ thị lớn.</p>
+                        <button class="read-more-btn">Chi tiết dự án <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+
+                <div class="item" data-category="cpp" data-project="sqlsystem">
+                    <div class="banner-item">
+                        <img src="sql.jpg" alt="Database Management">
+                        <div class="banner-overlay"><i class="fa-solid fa-expand"></i><span>Xem chi tiết</span></div>
+                    </div>
+                    <div class="inner-item">
+                        <div class="tech-tags">
+                            <span class="tag-cpp">C++ OOP</span>
+                            <span class="tag-db">SQL Server 2022</span>
+                            <span>CRUD</span>
+                        </div>
+                        <h3 class="title-item">Student Management System</h3>
+                        <p class="text">Ứng dụng quản lý cơ sở dữ liệu sinh viên, kết nối C++ với SQL Server để xử lý luồng dữ liệu và thống kê.</p>
+                        <button class="read-more-btn">Chi tiết dự án <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section-padding">
+        <div class="container">
+            <h2 class="title reveal">Liên Hệ Với Tôi</h2>
+            <div class="underline reveal"></div>
+            <div class="contact-flex">
+                <div class="contact-left reveal">
+                    <h3 class="contact-title">Thông tin liên lạc</h3>
+                    <ul class="contact-list">
+                        <li>
+                            <div class="contact-icon-box"><i class="fa-solid fa-location-dot"></i></div>
+                            <p>TP. Vinh, Nghệ An<br>Trường Đại học Vinh</p>
+                        </li>
+                        <li>
+                            <div class="contact-icon-box"><i class="fa-solid fa-phone"></i></div>
+                            <p>0397353477</p>
+                        </li>
+                        <li>
+                            <div class="contact-icon-box"><i class="fa-regular fa-envelope"></i></div>
+                            <p>tunalee2908@gmail.com</p>
+                        </li>
+                        <li>
+                            <div class="contact-icon-box"><i class="fa-solid fa-id-card"></i></div>
+                            <p>MSSV: 255748020110093<br>Viện Kỹ thuật và Công nghệ</p>
+                        </li>
+                    </ul>
+                    <div class="contact-socials">
+                        <a href="https://github.com/tunalee2908" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61564719611611&locale=vi_VN" target="_blank" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.tiktok.com/@tunaa2k7" target="_blank" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right reveal">
+                    <h3 class="contact-title">Gửi lời nhắn trực tiếp</h3>
+                    <form id="contactForm" action="https://formspree.io/f/mwlljbeq" method="POST">
+                        <div class="input-group">
+                            <input type="text" name="name" id="name" required placeholder=" ">
+                            <label for="name">Họ và tên của bạn</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="email" name="email" id="email" required placeholder=" ">
+                            <label for="email">Địa chỉ Email</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" name="subject" id="subject" required placeholder=" ">
+                            <label for="subject">Tiêu đề</label>
+                        </div>
+                        <div class="input-group">
+                            <textarea name="message" id="message" rows="4" required placeholder=" "></textarea>
+                            <label for="message">Nội dung tin nhắn...</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary" id="submitBtn">
+                            <i class="fa-solid fa-paper-plane"></i> Gửi Tin Nhắn
+                        </button>
+                        <p id="formStatus" class="form-status"></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container footer-inner">
+            <div class="footer-col">
+                <h3 class="footer-title">Nguyễn Hùng Anh Tuấn</h3>
+                <p>Đây là nơi tôi lưu giữ các dự án cá nhân và hành trình học tập tại Đại Học Vinh. Trang web được tự tay xây dựng bằng HTML/CSS/JS thuần.</p>
+            </div>
+            <div class="footer-col">
+                <h3 class="footer-title">Liên Kết</h3>
+                <div class="links">
+                    <a href="https://github.com/tunalee2908" target="_blank" class="link github" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=61564719611611&locale=vi_VN" target="_blank" class="link facebook" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.tiktok.com/@tunaa2k7" target="_blank" class="link tiktok" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-end">
+            <p>&copy; 2026 Nguyễn Hùng Anh Tuấn — CNTT Đại học Vinh</p>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal-overlay" id="projectModal">
+        <div class="modal-box">
+            <button class="modal-close" id="closeModal"><i class="fa-solid fa-xmark"></i></button>
+            <img src="" alt="Project Preview" id="modalImg" class="modal-img">
+            <div class="modal-body">
+                <div id="modalTags" class="tech-tags"></div>
+                <h2 id="modalTitle" class="modal-title">Tên dự án</h2>
+                <p id="modalDesc" class="modal-desc">Mô tả chi tiết dự án...</p>
+                <div class="modal-actions">
+                    <a href="#" id="modalGithub" target="_blank" class="btn btn-dark"><i class="fa-brands fa-github"></i> Xem Source / Báo Cáo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button class="back-to-top" id="backToTop" title="Về đầu trang">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="main.js"></script>
+</body>
+</html>
